@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang "pt-br">
+<head>
+    <link rel = "shortcut icon" type = "imagem/x-icon" href = "Sem-título.ico"/>
+
+   <meta charset="utf-8">
+   <title>PAODARIA</title>
+   
+   <script language="javascript"> 
+function setCookie(nome, valor, dias){ 
+diasms = (new Date()) .getTime() + 1000 * 3600 * 24 * dias; 
+dias = new Date(diasms); 
+expires = dias.toGMTString(); 
+document.cookie = escape(nome) + "=" + escape(valor) + "; expires=" + expires; 
+} 
+</script>
+   <link rel="stylesheet" type="text/css"href="folha_de_estilo.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+   </head>
+   <body>
+              
+		<script language="javascript">
+if (!document.cookie){
+setCookie("cookie", "1", 365);
+document.write("<font face='verdana' size='1'>Suas Visitas : 1</font>");
+} else {
+var cont = document.cookie;
+var dividindo = cont.split("=");
+//document.write(dividindo[1]);
+var numero = parseInt(dividindo[1]);
+var soma = numero + 1;
+document.write("<font face='verdana' size='1'>Suas Visitas : " + soma + "</font>");
+setCookie("cookie", soma, 365);
+}
+</script>
+ 	  
+            
+       <div class="Container-Principal">
+       	<header>
+       		<div class="logo">
+       			<a href="index.html">
+
+       				
+       				<img src="Sem título.png" width="50" height="90" alt="logo do site">
+					
+
+
+       			</a>
+       		</div>
+       		<nav>
+
+       			<ul>
+
+       				<li><a href="Historia.html"target="_blank">História</a></li>
+       				<li><a href="Produtos.html"target="_blank">Produtos</a></li>
+       				<li><a href="formulario.html"target="_blank">Pedidos</a></li>
+       				<li><a href="contato.html"target="_blank">Contato</a></li>
+                    <li><a href="sobre.html"target="_blank">Sobre</a></li>
+
+              
+       			</ul>
+
+
+       		</nav>
+
+
+
+       	</header>
+
+        <section id="banner">
+		
+		<script type="text/javascript">
+	{
+	{var botao = 0;}
+	function anim_botao(){
+	bootbotao = setTimeout("anim_botao()", 1000);
+	botao = botao +1;
+	if (botao == 4){botao = 1};
+	if (botao == 1)
+	{document.form_botao.animado.value = "OS MELHORES DESCONTOS"};
+	if (botao ==2)
+	{document.form_botao.animado.value = "CURIOSO?"};
+	if (botao ==3)
+	{document.form_botao.animado.value = "CLIQUE AQUI"};
+	}
+	function funcao_botao(){
+	if (botao == 1)
+	{location.href="produtos.html"};
+	if (botao == 2)
+	{location.href="produtos.html"}
+	if (botao == 3)
+	{location.href="produtos.html"};
+	}
+	setTimeout("anim_botao()", 10);
+	}
+	
+</script>
+<style type="text/css">
+#animado_botao{
+	border: 2px;
+	border-color: black;
+	border-style:solid;
+	width: 390px;
+	height: 36px;
+	font-family:times;
+	font-size: 25px;
+	font-weight:bold;
+	background-color: #66ccff;
+	color:#990033;
+	}
+#animado_botao:hover{
+	background-color: #6CA6CD;
+	color: black;
+	}
+</style>
+<form name="form_botao">
+<input type="button" name="animado" id="animado_botao" onclick="funcao_botao();"/>
+</form>
+		  <script>
+function GRANDE(x) {
+    x.style.height = "200px";
+    x.style.width = "200px";
+}
+function Pequena(x) {
+    x.style.height = "100px";
+    x.style.width = "100px";
+}
+</script>
+
+          <img src="a-fornada-padaria-artesanal-organica-fotos-vitrine.jpg" width="1600" height="680" alt= "banner">
+	
+		  <center><a href="formulario.html"target="_blank"><button type="button" class="btn btn-warning">Pré Lançamento</button></center>      
+
+        </section>
+		
+       </div>
+	   
+     </body>
+     </html>
